@@ -1,0 +1,120 @@
+.students_life .container{
+    display: flex;
+    
+}
+
+.sections_wrapper{
+    position: relative;
+    height: 550px;
+    text-align: center;
+    color: white;
+}
+
+.open_days{
+    position: absolute;
+    width: 400px; 
+    height: 543px; 
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 2.4)),url('../images/open.jpg'); /* путь к вашему изображению */
+    background-position: center;
+    transition: transform 0.5s;
+    overflow: hidden;
+    border-radius: 18px;
+}
+
+.open_days:hover,
+.clubs:hover, 
+.events:hover, 
+.council:hover{
+    transform: scale(1.05);
+    
+}
+
+.open_days .text h2,
+.clubs .text h2,
+.events .text h2,
+.council .text h2{
+    margin-bottom: 20px;
+}
+.open_days .text{
+    padding-top:480px;
+
+}
+.open_days:hover .text,
+.clubs:hover .text,
+.events:hover .text,
+.council:hover .text{
+    color: #f0f0f0;
+    transition: transform 0.4s ease;
+}
+
+.overlay {
+    transition: transform 0.4s ease;
+    visibility: hidden; 
+}
+
+.open_days:hover .text,
+.clubs:hover .text,
+.events:hover .text,
+.council:hover .text{
+    transform: translateY(-60px);
+}
+
+.open_days:hover .overflow,
+.clubs:hover .overflow,
+.events:hover .overflow,
+.council:hover .overflow{
+    transform: translateY(0px);
+    visibility: visible; 
+}
+.block_2{
+    display: flex;
+    position: absolute;
+    margin-left: 425px;
+}
+.clubs{
+    width: 400px; 
+    height: 260px; 
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 2.4)),url('../images/open.jpg'); /* путь к вашему изображению */
+    background-position: center; 
+    margin-right: 24px;
+    transition: transform 0.5s;
+    overflow: hidden;
+    border-radius: 18px;
+}
+.clubs .text{
+    padding-top: 200px;
+}
+
+.events{
+    width: 400px;
+    height: 260px; 
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 2.4)),url('../images/photo_5213178145530835250_y.jpg'); /* путь к вашему изображению */
+    background-position: center;
+    transition: transform 0.5s;
+    overflow: hidden;
+    border-radius: 18px;
+}
+.events .text{
+    padding-top: 200px;
+}
+
+
+.block_3{
+    position: absolute;
+    margin-left: 425px;
+    margin-top: 283px;
+}
+.council{
+    width: 819px; 
+    height: 260px; 
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 2.4)),url('../images/photo_5213178145530835249_y.jpg'); /* путь к вашему изображению */
+    background-position: center; 
+    background-color: #f0f0f0; 
+    transition: transform 0.5s;
+    overflow: hidden;
+    border-radius: 18px;
+}
+
+.council .text{
+    padding-top: 200px;
+}
